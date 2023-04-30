@@ -2,7 +2,8 @@ import Image from 'next/image';
 const Product = ({ productSingel }) => {
   return (
     <div className="container m-auto  flex gap-6">
-        <Image width={500} height={50} src={productSingel.image} alt="image" />
+        <Image width={500} height={50} src={productSingel.image[0]} alt="image" />
+        <Image width={500} height={50} src={productSingel.image[1]} alt="image" />
       <div className="flex flex-col justify-end m-10">
         <div className="text-2xl">
           <p> کدکالا :{productSingel.id}</p>
@@ -17,7 +18,6 @@ const Product = ({ productSingel }) => {
           اضافه کردن به سبد خرید
         </button>
       </div>
-      <Image width={500} height={50} src={productSingel.imageb} alt="image" />
     </div>
   );
 };
