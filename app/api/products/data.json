@@ -1,0 +1,66 @@
+[
+  { "id": 1,
+   "name": "Appel",
+    "slug": "appel",
+     "image":"/img/appel 141.jpg",
+     "price":1000,
+     "rating":4.5,
+     "numReviews":8,
+     "countInStack":20,
+     "description":"a device mobile"
+     }
+  ,
+  { "id": 2,
+   "name": "Samsung",
+    "slug": "samsung",
+     "image":"/img/fold.png",
+     "price":1000,
+     "rating":4.5,
+     "numReviews":8,
+     "countInStack":20,
+     "description":"a device mobile" 
+    },
+  { "id": 3,
+   "name": "Pixel",
+    "slug": "pixel",
+     "image":"/img/googel 7p.png",
+     "price":1000,
+     "rating":4.5,
+     "numReviews":8,
+     "countInStack":20,
+     "description":"a device mobile" 
+    },
+  {
+    "id": 4,
+    "name": "Motorela",
+    "slug": "pixel",
+    "image": "/img/img-5.png",
+    "price": 1000,
+    "rating": 4.5,
+    "numReviews": 8,
+    "countInStack": 20,
+    "description": "a device mobile"
+  },
+  {
+    "id": 5,
+    "name": "samsung ",
+    "slug": "pixel",
+    "image": "/img/sam flip.png",
+    "price": 1000,
+    "rating": 4.5,
+    "numReviews": 8,
+    "countInStack": 20,
+    "description": "a device mobile"
+  }
+  ,{
+    "id": 6,
+    "name": "Pixel 7",
+    "slug": "pixel",
+    "image": "/img/googel 7.png",
+    "price": 1000,
+    "rating": 4.5,
+    "numReviews": 8,
+    "countInStack": 20,
+    "description":"/n a device mobile"
+  }
+]
