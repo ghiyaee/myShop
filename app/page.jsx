@@ -11,7 +11,7 @@ const Homepage = () => {
     fetchDate();
   }, []);
   const fetchDate = async () => {
-    const fetchData = await fetch('http://localhost:3000/api/products');
+    const fetchData = await fetch('http://localhost:3000/api/products',{cache:'no-cache'});
     const resP = await fetchData.json();
     useProducts(resP);
   };

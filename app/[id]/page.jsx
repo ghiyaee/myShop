@@ -1,6 +1,6 @@
 import Product from '@/app/component/Product';
 const fetchData = async () => {
-  const data = await fetch('http://localhost:3000/api/products');
+  const data = await fetch('http://localhost:3000/api/products',{cache:'no-store'});
   const resp = await data.json();
   return resp;
 };
