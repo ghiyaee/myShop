@@ -14,11 +14,12 @@
    "name": "Samsung",
     "slug": "samsung",
      "image":"/img/samfold.png",
+     "imageb":"/img/samflodb.png",
      "price":1000,
      "rating":4.5,
      "numReviews":8,
      "countInStack":20,
-     "description":"a device mobile" 
+     "description":"گوشی تاشو" 
     },
   { "id": 3,
    "name": "Pixel",
@@ -39,7 +40,7 @@
     "rating": 4.5,
     "numReviews": 8,
     "countInStack": 20,
-    "description": "a device mobile"
+    "description": "گوشی تاشو"
   },
   {
     "id": 5,
@@ -50,7 +51,7 @@
     "rating": 4.5,
     "numReviews": 8,
     "countInStack": 20,
-    "description": "a device mobile"
+    "description": "گوشی تاشو"
   }
   ,{
     "id": 6,
@@ -61,6 +62,6 @@
     "rating": 4.5,
     "numReviews": 8,
     "countInStack": 20,
-    "description":"/n a device mobile"
+    "description":" a device mobile"
   }
 ]
