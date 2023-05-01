@@ -20,15 +20,10 @@ const Products = ({ products }) => {
             </div>
             <div className=" flex flex-col justify-center mt-4">
               <h2 className="text-xl font-bold">نام گوشی :{resp.name}</h2>
-              <div>قیمت :{resp.price} تومان</div>
-              <div>توضیحات :{resp.description}</div>
+              <p>قیمت :{resp.price} تومان</p>
+              <p>توضیحات :{resp.description}</p>
             </div>
-            <button
-              className="p-4 bg-blue-400 mt-4 text-xl font-bold hover:bg-blue-600
-            rounded-md transition-all duration-700 hover:text-white w-[15rem] "
-            >
-              بیشتر...
-            </button>
+            <button className="primery-button">بیشتر...</button>
           </Link>
         </div>
       ))}

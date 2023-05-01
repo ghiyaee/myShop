@@ -1,5 +1,12 @@
+'use client';
 import Link from 'next/link';
+import { useState } from 'react';
+import { useContext } from 'react';
+import { Store } from '../utils/Store';
 const Header = () => {
+  const { state, dispatch } = useContext(Store)
+  const { cart } = state
+  console.log(cart);
   return (
     <header>
       <nav
@@ -8,6 +15,11 @@ const Header = () => {
       >
         <Link href="/">فروشگاه من</Link>
         <div className="flex gap-4">
+          {cart.cartItems.length > 0 ?
+            <span className="rounded-full bg-red-500 w-10 h-10 text-center">
+              {cart.cartItems.reduce((a, b) => a + b.quantity,0)}
+            </span>
+          :''}
           <Link href={'/'}>سبدخرید</Link>
           <Link href={'/'}>ورود</Link>
         </div>
