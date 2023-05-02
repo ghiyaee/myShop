@@ -3,12 +3,15 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { useContext } from 'react';
 import { Store } from '../utils/Store';
+import { useRouter } from 'next/navigation';
 const Product = ({ productSingel }) => {
-const {state, dispatch }=useContext(Store)
+  const { state, dispatch } = useContext(Store)
+  const router=useRouter()
   const cardHandel = () => {
     const existItem = state.cart.cartItems.find(f => f.id === productSingel.id);
     const quantity=existItem ? existItem.quantity +1 :1
-   dispatch({type:'CART_ADD_ITEM',payload:{...productSingel,quantity}})
+    dispatch({ type: 'CART_ADD_ITEM', payload: { ...productSingel, quantity } })
+    router.push('/card')
   };
 
   return (

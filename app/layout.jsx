@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="fa:IR">
       <body>
         <StoreProvider>
-          <div className="flex flex-col  min-h-screen justify-between">
+          <div className="flex flex-col  min-h-screen justify-between ">
             <Header  />
             {children}
             <Footer />

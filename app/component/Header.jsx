@@ -15,11 +15,11 @@ const Header = () => {
       >
         <Link href="/">فروشگاه من</Link>
         <div className="flex gap-4">
-          {cart.cartItems.length > 0 ?
+          {cart.cartItems.length > 0 &&
             <span className="rounded-full bg-red-500 w-10 h-10 flex justify-center items-center ">
               {cart.cartItems.reduce((a, b) => a + b.quantity,0)}
             </span>
-          :''}
+          }
           <Link href={'/card'}>سبدخرید</Link>
           <Link href={'/login'}>ورود</Link>
         </div>

@@ -15,6 +15,11 @@ const reducer = (state, action) => {
         ? state.cart.cartItems.map((i) =>i.name === existItem.name ? newItem : i): [...state.cart.cartItems, newItem];
       return { ...state, cart: { ...state.cart, cartItems } };
     }
+    case 'REMOVE_PRODUCT': {
+      const newItem = action.payload;
+      const cartItems = state.cart.cartItems.filter(f => f.id !== newItem.id)
+      return{...state,cart:{...state.cart,cartItems}}
+      }
     default:
       return state;
   }
