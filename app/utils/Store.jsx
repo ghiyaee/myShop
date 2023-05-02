@@ -2,8 +2,12 @@
 import { createContext, useContext, useReducer } from 'react';
 export const Store = createContext();
 
+import Cookies from 'js-cookie';
+
 const initailState = {
-  cart: { cartItems: [] },
+  cart: Cookies.get('cart')
+    ? JSON.parse(Cookies.get('cart'))
+    : { cartItems: [] },
 };
 
 const reducer = (state, action) => {
@@ -12,14 +16,19 @@ const reducer = (state, action) => {
       const newItem = action.payload;
       const existItem = state.cart.cartItems.find((f) => f.id === newItem.id);
       const cartItems = existItem
-        ? state.cart.cartItems.map((i) =>i.name === existItem.name ? newItem : i): [...state.cart.cartItems, newItem];
+        ? state.cart.cartItems.map((i) =>
+            i.name === existItem.name ? newItem : i
+          )
+        : [...state.cart.cartItems, newItem];
+      Cookies.set('cart', JSON.stringify({ ...state.cart, cartItems }));
       return { ...state, cart: { ...state.cart, cartItems } };
     }
     case 'REMOVE_PRODUCT': {
       const newItem = action.payload;
-      const cartItems = state.cart.cartItems.filter(f => f.id !== newItem.id)
-      return{...state,cart:{...state.cart,cartItems}}
-      }
+      const cartItems = state.cart.cartItems.filter((f) => f.id !== newItem.id);
+      Cookies.set('cart', JSON.stringify({ ...state.cart, cartItems }));
+      return { ...state, cart: { ...state.cart, cartItems } };
+    }
     default:
       return state;
   }

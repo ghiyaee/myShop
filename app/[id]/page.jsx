@@ -6,7 +6,7 @@ const fetchData = async () => {
 };
 const ProductSingel = async ({ params }) => {
   const product = await fetchData();
-  const productSingel = product.find((f) => f.id === +params.id);
+  const productSingel = product.find((f) => f.id === + params.id);
   return <Product productSingel={productSingel} />;
 };
 export default ProductSingel;

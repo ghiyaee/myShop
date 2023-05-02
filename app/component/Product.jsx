@@ -9,7 +9,7 @@ const Product = ({ productSingel }) => {
   const router=useRouter()
   const cardHandel = () => {
     const existItem = state.cart.cartItems.find(f => f.id === productSingel.id);
-    const quantity=existItem ? existItem.quantity +1 :1
+    const quantity=existItem ? existItem.quantity + 1 : 1
     dispatch({ type: 'CART_ADD_ITEM', payload: { ...productSingel, quantity } })
     router.push('/card')
   };
