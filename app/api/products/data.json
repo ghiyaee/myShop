@@ -7,7 +7,7 @@
     "price": 1000,
     "rating": 4.5,
     "numReviews": 8,
-    "countInStack": 0,
+    "countInStack": 10,
     "description": "a device mobile"
   }
   ,
