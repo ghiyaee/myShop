@@ -16,7 +16,7 @@ const Homepage = () => {
     useProducts(resP);
   };
   return (
-    <div className="container m-auto mt-4 px-4 min-h-screen">
+    <div className="container m-auto mt-4 px-4  ">
       {products && <Products products={products} />}
     </div>
   );

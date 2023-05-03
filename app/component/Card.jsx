@@ -18,10 +18,10 @@ const Card = () => {
   }
   return (
     <>
-      <div className="flex gap-10">
+      <div className="flex justify-between w-full  absolute top-14">
         <div className="w-[50%] ">
           {cart.cartItems.length === 0 ? (
-            <h2 className="flex justify-center items-center text-3xl shadow-lg mr-8">
+            <h2 className="flex justify-center items-center text-3xl p-16 shadow-lg mr-8">
               سبد خرید شما خالی است -
               <Link className="text-blue-500" href={'/'}>
                 برگشت
@@ -44,6 +44,7 @@ const Card = () => {
                   {resp.name}
                 </h2>
                 <p>
+                  تعداد 
                   <select
                     value={resp.quantity}
                     onChange={(e) => updateGty(resp, e.target.value)}
@@ -66,7 +67,7 @@ const Card = () => {
             ))
           )}
         </div>
-        <div className="shadow-xl w-[50%] ml-6 text-center p-6 text-3xl flex flex-col justify-around">
+        <div className="shadow-xl w-[40%] ml-6 text-center p-6 text-3xl flex flex-col justify-around absolute left-0  ">
           <div>
             {`جمع تعداد واقلام (${cart.cartItems.reduce(
               (a, b) => a + b.quantity,

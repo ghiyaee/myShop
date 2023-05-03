@@ -11,7 +11,7 @@ const Header = () => {
   //   setCartItemsCount(cart.cartItems.reduce((a, b) => a + b.quantity, 0));
   // },[cart.cartItems])
   return (
-    <header>
+    <header >
       <nav
         className="h-14 bg-zinc-600 text-white flex items-center
          px-4 justify-between font-bold text-2xl shadow-md"

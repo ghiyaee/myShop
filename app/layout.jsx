@@ -14,15 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa:IR">
-      <body>
         <StoreProvider>
-          <div className="flex flex-col  min-h-screen justify-between ">
+      <body >
+           <div className="flex flex-col justify-between  min-h-screen">
             <Header />
             {children}
             <Footer />
-          </div>
-        </StoreProvider>
+           </div> 
       </body>
+        </StoreProvider>
     </html>
   );
 }
