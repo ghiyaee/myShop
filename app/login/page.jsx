@@ -3,8 +3,8 @@ import Link from "next/link";
 const checkOut = () => {
     return (
       <div className=" container m-auto mt-4 ">
-        <form className="mx-auto max-w-screen-md ">
-          <h2 className="text-3xl">ورود / ثبت نام</h2>
+        <form className="mx-auto max-w-screen-md shadow-lg p-8 rounded-lg">
+          <h2 className="text-3xl text-center ">ورود / ثبت نام</h2>
           <div className="my-4">
             <label htmlFor="email">ایمیل</label>
             <input

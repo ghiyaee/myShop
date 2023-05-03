@@ -29,5 +29,5 @@ font-size:2rem
 input,
 select,
 textarea{
-@apply rounded border p-2 outline ring-indigo-300 focus:ring
+@apply rounded  p-2 outline ring-indigo-300 focus:ring
 }
