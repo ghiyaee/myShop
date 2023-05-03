@@ -22,3 +22,12 @@ body {
 @apply p-4 bg-blue-400 mt-4 text-xl font-bold hover:bg-blue-600
     transition-all rounded-md hover:text-white duration-700
 }
+label{
+font-size:2rem
+}
+
+input,
+select,
+textarea{
+@apply rounded border p-2 outline ring-indigo-300 focus:ring
+}

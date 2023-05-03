@@ -80,7 +80,7 @@ const Card = () => {
           </div>
           <button
             className="primery-button w-full"
-            onClick={() => router.push('/checkOut')}
+            onClick={() => router.push('login?redirect=/login')}
           >
             سفارش نهایی
           </button>
